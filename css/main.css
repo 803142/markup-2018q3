@@ -71,7 +71,9 @@ header nav li a:hover{
 .we {
     font-family: 'Georgia';
     font-style: italic;
-    font-size: 2em;
+    font-size: 1.98em;
+    line-height: 0.48em;
+    margin-top: 0.48em;
 }
 /*Member*/
 /*Domain*/
