@@ -1,0 +1,42 @@
+/*Body*/
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.yellow {
+    border-color: yellow;
+}
+nav {
+    float: right;
+}
+nav ul li {
+    display: inline-block;
+    
+}
+/*Heder*/
+header nav li {
+    margin: 10px;
+}
+/*Member*/
+/*Domain*/
+/*Packages*/
+
+.diagramm {
+    transform: rotate(45deg);    
+    width: 20px; height: 20px;
+    text-align: center;
+    border: 6px solid transparent;
+    border-radius: 100px;
+    border-top: 6px solid;
+}
+.diagramm i {     
+    transform: rotate(-45deg);
+    font-size: 10px;
+}
+/*About Us*/
+/*Commentes*/
+/*Functions*/
+/*Footer*/
