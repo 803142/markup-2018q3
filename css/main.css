@@ -1,16 +1,35 @@
 /*Body*/
-body{
-    font-family: 'Lato', sans-serif;
+html{
+    font-size: 1vw;
 }
-.wrapper{
-    max-width: 1024px;
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background: black;
+}
+.wrapper {
+    max-width: 75%;
     margin: 0 auto;
+}
+.row {
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    line-height: 5.5rem;
+}
+.clr {
+    clear: both;
 }
 .yellow {
     border-color: yellow;
 }
 nav {
     float: right;
+    position: absolute;
+    right: 0;
+
+}
+nav ul{
+    margin:0;
 }
 nav ul li {
     display: inline-block;
@@ -18,7 +37,20 @@ nav ul li {
 }
 /*Heder*/
 header nav li {
-    margin: 10px;
+    margin-left: 4rem;
+    font-weight: 500;
+}
+header nav li a{
+    padding: 2.12em 0;
+    text-decoration: none;    
+    color: white;
+}
+header nav li a:hover{
+    border-bottom: 1px solid white;
+}
+.logo {
+    float: left;
+    height: 5.5em;
 }
 /*Member*/
 /*Domain*/
