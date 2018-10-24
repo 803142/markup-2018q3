@@ -5,7 +5,7 @@ html{
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
-    background: black;
+
 }
 .wrapper {
     max-width: 75%;
@@ -78,8 +78,17 @@ header nav li a:hover{
 /*Member*/
 /*Domain*/
 /*Packages*/
-
+#packages {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: ".yellow" ".gray" ".red" ".blue";
+    grid-gap: 1em;
+}
+#packages div p {
+    text-align: center;
+}
 .diagramm {
+    margin:0 auto;
     transform: rotate(45deg);    
     width: 20px; height: 20px;
     text-align: center;
