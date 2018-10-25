@@ -7,6 +7,12 @@ body {
     margin: 0;
 
 }
+.container {
+    display: grid;
+    grid-template-rows: 65em auto 10em;
+    grid-template-areas: "header" "main" "footer";
+
+}
 .wrapper {
     max-width: 75%;
     margin: 0 auto;
@@ -78,11 +84,23 @@ header nav li a:hover{
 /*Member*/
 /*Domain*/
 /*Packages*/
+.packages {
+    padding: 6em 12.5%;
+    background-image: url(../images/packagesphotobg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 #packages {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-areas: ".yellow" ".gray" ".red" ".blue";
-    grid-gap: 1em;
+}
+#packages>div{
+    justify-self: center;
+    background-color: white;
+    padding: 1em;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.06);
+ 
 }
 #packages div p {
     text-align: center;
@@ -90,16 +108,24 @@ header nav li a:hover{
 .diagramm {
     margin:0 auto;
     transform: rotate(45deg);    
-    width: 20px; height: 20px;
+    width: 4em;
+    height: 4em;
     text-align: center;
-    border: 6px solid transparent;
-    border-radius: 100px;
-    border-top: 6px solid;
+    border: 0.5em solid transparent;
+    border-radius: 50%;    
+}    
+.yellow .diagramm  {
+    border-top: 0.5em solid #f9d423;
+    color: #f9d423;
 }
+
 .diagramm i {     
     transform: rotate(-45deg);
-    font-size: 10px;
+    font-size: 1.2em;
+    padding: 1em;
 }
+
+
 /*About Us*/
 /*Commentes*/
 /*Functions*/
