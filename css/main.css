@@ -46,7 +46,7 @@ nav ul li {
 /*Heder*/
 header{
     display: grid;
-    grid-template-rows: 5.5em auto auto 7.5em;
+    grid-template-rows: 5.52em auto auto 7.5em;
     color: white;
     background-size: cover;
     background-image: url(../images/headerbg.png);
@@ -94,7 +94,7 @@ header nav li a:hover{
     width: 48.8%;
     border-top: 7.5em solid #21424a;
     border-left: 0px solid transparent;
-    border-right: 1.6em solid transparent;
+    border-right: 1.7em solid transparent;
 }
 /*Member*/
 
