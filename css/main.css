@@ -22,7 +22,7 @@ input, select {
 }
 .container {
     display: grid;
-    grid-template-rows: 65em auto 10em;
+    grid-template-rows: 65em auto auto;
     grid-template-areas: "header" "main" "footer";
 
 }
@@ -135,9 +135,22 @@ header nav li a:hover{
     grid-template-columns: 4em auto 5.5em;
     border: 1px solid;
     width: 54.6em;
-    margin: 3em auto;
+    margin: 3em auto 2.5em;
     line-height: 3em;
 }
+#domain .table {    
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border: 1px solid;
+    width: 54.6em;
+    margin: 1em auto 5.7em;
+    line-height: 5.9em;
+    text-align: center;
+    text-transform: uppercase;
+}
+#domain .table div:not(:nth-child(5n)):not(:first-child) {
+    font-size:.85em;
+    text-transform: none;
 }
 .form>* {    
     font-size: .9em;
@@ -152,7 +165,6 @@ header nav li a:hover{
 #packages {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-areas: ".yellow" ".gray" ".red" ".blue";
     grid-gap: 3.6em;
 }
 #packages>div {
@@ -197,17 +209,45 @@ header nav li a:hover{
     font-size: 1em;
     padding: .8em;
 }
-tr td:first-child {
+#packages tr td:first-child {
     text-align:left; 
 }
-tr td:nth-child(2) {
+#packages tr td:nth-child(2) {
     text-align:right; 
 }
 .yellow tr td:nth-child(2) {
-    color: #f9d423; 
+    color: #f9d423;
+}
+p span {
+    font-size: 1em;
 }
 
 /*About Us*/
+#about {
+    padding: 6em 12.5%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+#about hr {
+    width: 100%;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #dedede;
+}
+
 /*Commentes*/
 /*Functions*/
+#functions {
+    padding: 6em 12.5%;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5em;
+    text-align: center;
+}
 /*Footer*/
+footer {
+    display: grid;
+    background-color: #2a2a2a;
+    color: white;
+}

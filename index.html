@@ -43,27 +43,24 @@
              Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
         <div class="form">
             <label for="whatdomain">www.</label>
-            <input type="What do you want?">    
+            <input type="text" placeholder="What do you want?">    
             <select size="1" name="whatdomain">
                 <option value=".com">.com</option>
                 <option value=".net">.net</option>
                 <option value=".org">.org</option>
             </select>
         </div>
-        <table>
-            <tr>
-                <td>.com</td>
-                <td>1 Year</td>
-                <td>$9.00 USD</td>
-                <td>Transfer Price No</td>
-            </tr>
-            <tr>
-                <td>.net</td>
-                <td>1 Year</td>
-                <td>$9.00 USD</td>
-                <td>Transfer Price No</td>
-            </tr>
-        </table>
+        <div class="table">
+            <div>.com</div>
+            <div>1 Year</div>
+            <div>$9.00 USD</div>
+            <div>Transfer Price No</div>
+            <div>.net</div>
+            <div>1 Year</div>
+            <div>$9.00 USD</div>
+            <div>Transfer Price No</div>
+        </div>
+
     </section>
     <section class="packages">
         <div id="packages">
@@ -220,9 +217,10 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="about">
+        <hr>
         <div>
-            <h3>About Us</h3>
+            <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                Praesent feugiat eget diam sit amet molestie.Curabitur. 
                ut ipsum bibendum tortor lacinia fermentum nec joeıa.
@@ -253,27 +251,27 @@
     <section class="slider">
 
     </section>
-    <section>
+    <section id="functions">
         <div>
-            <p></p>
+            <p><i class="fas fa-bolt"></i></p>
             <p>Fast Servers</p>
             <p>Nulla dapibus neque augue, quis 
                tincidunt tortor aliquam vitae.</p>
         </div>
         <div>
-            <p></p>
+            <p><i class="fas fa-cloud"></i></p>
             <p>Cloud Servers</p>
             <p>Nulla dapibus neque augue, quis 
                tincidunt tortor aliquam vitae.</p>
         </div>
         <div>
-            <p></p>
+            <p><i class="fas fa-arrows-alt"></i></p>
             <p>Domain Transfer</p>
             <p>Nulla dapibus neque augue, quis 
                tincidunt tortor aliquam vitae.</p>
         </div>
         <div>
-            <p></p>
+            <p><i class="fas fa-comments"></i></p>
             <p>Live Support</p>
             <p>Nulla dapibus neque augue, quis 
                tincidunt tortor aliquam vitae.</p>
@@ -281,6 +279,7 @@
     </section>
     </main>
     <footer>
+            <img class="logo" src="images/logo.png" alt="Ghost Host">
         <nav>
             <ul>
                 <li><a href="">Home</a></li>
@@ -298,16 +297,20 @@
             </p>
             <p>Design by Mert Can Eyriyer.</p>
         </div>
-        <div><ul>
+        <div>
+        <ul>
             <li>Support</li>
             <li>Account</li>
             <li>Product Catalog</li>
             <li>Shortcodes</li>
+        </ul>
+        <ul>
             <li>Site Map</li>
             <li>Whois Search</li>
             <li>Web Mail</li>
             <li>Find Domain</li>
-        </ul></div>
+        </ul>
+        </div>
         <address>
             <p>0000-0000-0000</p>
             <p>informationteam@ghosthost.com</p>
