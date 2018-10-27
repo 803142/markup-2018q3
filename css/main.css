@@ -1,11 +1,24 @@
+@font-face {
+    font-family: Lato-Medium; 
+    src: url(../fonts/Lato-Medium.ttf);
+}
+@font-face {
+    font-family: 'Montserrat Ultra Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Montserrat-UltraLight.woff') format('woff');
+}   
 /*Body*/
 html{
     font-size: 1vw;
 }
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato-Medium', sans-serif;
     margin: 0;
 
+}
+input, select {
+    border: none;
 }
 .container {
     display: grid;
@@ -28,7 +41,7 @@ body {
     clear: both;
 }
 .yellow {
-    border-color: yellow;
+    border-color: #f9d423;
 }
 nav {
     float: right;
@@ -46,7 +59,7 @@ nav ul li {
 /*Heder*/
 header{
     display: grid;
-    grid-template-rows: 5.52em auto auto 7.5em;
+    grid-template-rows: 5.52em 24.9em auto 7.5em;
     color: white;
     background-size: cover;
     background-image: url(../images/headerbg.png);
@@ -54,7 +67,7 @@ header{
     text-align: center;
 }
 header nav li {
-    margin-left: 4rem;
+    margin-left: 3.95rem;
     font-weight: 500;
 }
 header nav li a{
@@ -70,23 +83,34 @@ header nav li a:hover{
     height: 5.5em;
 }
 .hello {
-    margin-top: 4.58em;
+    margin-top: 4.6em;
     margin-bottom: 0px;
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 4.5em;
+    font-size: 4.4em;
 }
 .we {
     font-family: 'Georgia';
     font-style: italic;
     font-size: 1.98em;
-    line-height: 0.48em;
+    line-height: 1.48em;
     margin-top: 0.48em;
 }
 .login {
     background-color:  #2fac6c;
     position: relative;
     line-height: 2em;
+}
+.login a{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.25em;
+    top: 2.2em;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
 .trapezium {
     position: absolute;
@@ -97,7 +121,27 @@ header nav li a:hover{
     border-right: 1.7em solid transparent;
 }
 /*Domain*/
-
+#domain {
+    text-align: center;
+}
+#domain h2 {
+    margin-top: 4em;
+}
+#domain p {
+    font-family: 'Montserrat Ultra Light';
+}
+.form {
+    display: grid;
+    grid-template-columns: 4em auto 5.5em;
+    border: 1px solid;
+    width: 54.6em;
+    margin: 3em auto;
+    line-height: 3em;
+}
+}
+.form>* {    
+    font-size: .9em;
+}
 /*Packages*/
 .packages {
     padding: 6em 12.5%;
@@ -109,37 +153,59 @@ header nav li a:hover{
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-areas: ".yellow" ".gray" ".red" ".blue";
+    grid-gap: 3.6em;
 }
-#packages>div{
-    justify-self: center;
+#packages>div {
     background-color: white;
     padding: 1em;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.06);
- 
+    border-top: 0.3em solid;
+}
+#packages h3 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 1.45em;
+    font-size: 1em;
+}
+#packages>div>table {
+    width: 94%;
+    margin: 0 auto;
+}
+#packages>div>table tr {
+    height: 2.2em;
 }
 #packages div p {
     text-align: center;
 }
 .diagramm {
-    margin:0 auto;
-    transform: rotate(45deg);    
-    width: 4em;
-    height: 4em;
+    margin: 1.3em 4.6em 0.5em 4.6em;
+    transform: rotate(45deg);
+    width: 3em;
+    height: 3em;
     text-align: center;
-    border: 0.5em solid transparent;
+    border: 0.4em solid transparent;
     border-radius: 50%;    
 }    
 .yellow .diagramm  {
-    border-top: 0.5em solid #f9d423;
+    border-top: 0.4em solid #f9d423;
     color: #f9d423;
 }
 
 .diagramm i {     
     transform: rotate(-45deg);
-    font-size: 1.2em;
-    padding: 1em;
+    font-size: 1em;
+    padding: .8em;
 }
-
+tr td:first-child {
+    text-align:left; 
+}
+tr td:nth-child(2) {
+    text-align:right; 
+}
+.yellow tr td:nth-child(2) {
+    color: #f9d423; 
+}
 
 /*About Us*/
 /*Commentes*/
