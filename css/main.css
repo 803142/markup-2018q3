@@ -7,7 +7,13 @@
     font-style: normal;
     font-weight: normal;
     src: url('../fonts/Montserrat-UltraLight.woff') format('woff');
+} 
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    src: url(../fonts/fa-solid-900.ttf) format('ttf');
 }   
+
 /*Body*/
 html{
     font-size: 1vw;
@@ -24,25 +30,20 @@ input, select {
     display: grid;
     grid-template-rows: 65em auto auto;
     grid-template-areas: "header" "main" "footer";
-
 }
 .wrapper {
-    max-width: 75%;
+    width: 75%;
     margin: 0 auto;
+    position: relative;
 }
-
 .row {
     position: relative;
     border-bottom: 1px solid rgba(255,255,255,0.15);
     line-height: 5.5rem;
-    width: 75%;
-    margin: 0 auto;
 }
-
 .clr {
     clear: both;
 }
-
 nav {
     float: right;
     position: absolute;
@@ -55,6 +56,9 @@ nav ul{
 nav ul li {
     display: inline-block;
     
+}
+.line {
+    border-left: .15rem dotted #dedede;
 }
 /*Heder*/
 header {
@@ -80,7 +84,10 @@ header nav li a:hover{
 }
 .logo {
     float: left;
-    height: 5.5em;
+    display: block;
+    max-width: 8.3rem;
+    margin-top: 1.9rem;
+    padding-left: 0.2rem;
 }
 .hello {
     margin-top: 4.71em;
@@ -181,7 +188,6 @@ header nav li a:hover{
     background-color: white;
     padding: 1em;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.06);
-    border-top: 0.3rem solid;
 }
 #packages h3 {
     text-transform: uppercase;
@@ -204,17 +210,27 @@ header nav li a:hover{
     height: 2.35em;
     font-family: 'Lato light',Arial, Helvetica, sans-serif;
 }
-#packages div p {
+#packages div.bage p {
     text-align: center;
     line-height: 1.8rem;
-    margin: 1.4rem auto 0.6rem;
+    margin: 1.5rem auto 0rem;
     width: 46%;
+    font-family: 'Lato light',Arial, Helvetica, sans-serif;
+    font-size: .8rem;
 }
-#packages div span {
-
+#packages div.bage sup{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Lato',Arial, Helvetica, sans-serif;
+}
+#packages div.bage span {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lato',Arial, Helvetica, sans-serif;
 }
 .button {
-    margin: 1.3rem 27%;
+    margin: 1rem 27%;
     font-weight: bold;
 }
 .diagramm {
@@ -236,11 +252,23 @@ header nav li a:hover{
     font-weight: 700;
     float: right;
 }
+div.package1 {
+    border-top: 0.3rem solid #f9d423;
+}
+.package1 .bage p {
+    border-bottom: 0.2rem solid #f9d423;
+}
 .package1 .diagramm  {
     border-top: 0.4em solid #f9d423;
 }
 .package1 .diagramm , .package1 span {
     color: #f9d423;
+}
+div.package2 {
+    border-top: 0.3rem solid rgb(127,140,141);
+}
+.package2 .bage p {
+    border-bottom: 0.2rem solid rgb(127,140,141);
 }
 .package2 .diagramm  {
     border-top: 0.4em solid rgb(127,140,141);
@@ -249,13 +277,11 @@ header nav li a:hover{
 .package2 .diagramm , .package2 span {
     color: rgb(127,140,141);
 }
-.package3 .diagramm  {
-    border-top: 0.4em solid rgb(248,95,64);
-    border-right: .4em solid  rgb(248,95,64);
-    border-bottom: .4em solid  rgb(248,95,64);
+div.package3 {
+    border-top: 0.3rem solid rgb(248,95,64);
 }
-.package3 .diagramm , .package3 span {
-    color: rgb(248,95,64);
+.package3 .bage p {
+    border-bottom: 0.2rem solid rgb(248,95,64);
 }
 .package3 .diagramm  {
     border-top: 0.4em solid rgb(248,95,64);
@@ -264,6 +290,21 @@ header nav li a:hover{
 }
 .package3 .diagramm , .package3 span {
     color: rgb(248,95,64);
+}
+div.package4 {
+    border-top: 0.3rem solid rgb(26,188,156);
+}
+.package4 .bage p {
+    border-bottom: 0.2rem solid rgb(26,188,156);
+}
+.package4 .diagramm  {
+    border: 0.4em solid rgb(26,188,156);
+}
+.package4 .diagramm i {
+    margin-top: .2rem;
+}
+.package4 .diagramm , .package4 span {
+    color: rgb(26,188,156);
 }
 #packages tr td:first-child {
     text-align:left; 
@@ -271,26 +312,63 @@ header nav li a:hover{
 #packages tr td:nth-child(2) {
     text-align:right; 
 }
-
-p span {
-    font-size: 1em;
-}
-
 /*About Us*/
 #about {
-    padding: 6em 12.5%;
-    display:grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
+    margin: 0 12.5% 5rem;
+    border-top: .2rem dotted #dedede;
+    display: grid;
+    grid-template-columns: 27rem 1px auto;
+    grid-gap: 5rem;
+    padding-top: 6rem;
 }
-#about hr {
+#about .about {
     width: 100%;
-    border-style: dashed;
-    border-width: 1px;
-    border-color: #dedede;
 }
-
+.team {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0px 1.1rem;
+    justify-content: space-between;
+    text-align: center;
+}
+#about .team img {
+    display: block;
+    border: .3rem solid rgb(229,229,229);
+    border-radius: 50%;
+    max-width: 5.6rem;
+    margin-top: 0.5rem;
+}
+#about .team h4 {
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+#about .team p {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    color: rgb(142,142,142);
+}
+#about h2 {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    font-size: 2.2rem;
+}
+.about p {
+    font-size: 1.075rem;
+    line-height: 1.7rem;
+}
+.team i {
+    margin: 0.55rem;
+}
+.team i:hover {
+    color: rgb(31,137,186);
+    cursor: pointer;
+}
 /*Commentes*/
+.slider {
+    background-image: url(../images/officeBG.jpg);
+    min-height: 12rem;
+}
 /*Functions*/
 #functions {
     padding: 6em 12.5%;
@@ -299,9 +377,107 @@ p span {
     grid-gap: 5em;
     text-align: center;
 }
+#functions h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+#functions p {
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-top: .3rem;
+    font-family: 'Lato light',Arial, Helvetica, sans-serif;
+    color: rgb(126,126,126);
+}
+.function {
+    width: 3.7rem;
+    min-height: 3.7rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+}
+.function1 {
+    background: #f9d423;
+}
+.function1::before{
+    font-family: "Font Awesome 5 Free";
+    content: '\f0e7';
+    position: absolute;
+    left: 1.3rem;
+    top: 1rem;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+.function2 {
+    background: rgb(15,175,241)
+}
+.function2::before{
+    font-family: "Font Awesome 5 Free";
+    content: '\f0c2';
+    position: absolute;
+    left: 0.9rem;
+    top: 0.9rem;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+.function3 {
+    background: rgb(149,165,166)
+}
+.function3::before{
+    font-family: "Font Awesome 5 Free";
+    content: '\f0b2';
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+.function4 {
+    background: rgb(241,84,15)
+}
+.function4::before{
+    font-family: "Font Awesome 5 Free";
+    content: '\f086';
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
 /*Footer*/
 footer {
     display: grid;
     background-color: #2a2a2a;
-    color: white;
+    color: rgb(104,104,104);
+    font-family: 'Lato light',Arial, Helvetica, sans-serif;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 4fr 5fr 3fr;
+}
+footer .logo {
+    float: left;
+    display: block;
+    max-width: 8.3rem;
+    margin-top: 1.4rem;
+    padding-left: 0.05rem;
+}
+footer div.wrapper{
+    min-height: 4.6rem;
+    border-bottom: 1px solid rgb(104,104,104);
+}
+footer nav {
+    text-transform: uppercase;
+    margin-top: 1.7rem;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+}
+footer nav a {
+    color: rgb(104,104,104);
+    text-decoration: none;
+    font-family: 'Lato',Arial, Helvetica, sans-serif;
+}
+footer nav li {
+    margin-left: 2.2rem;
 }

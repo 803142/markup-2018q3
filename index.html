@@ -12,8 +12,8 @@
 <body> 
     <div class="container">  
     <header>        
-        <div class="row">
-            <img class="logo" src="images/logo.png" alt="Ghost Host">
+        <div class="row wrapper">
+            <img class="logo" src="images/logoghost.png" alt="Ghost Host">
         <nav>
             <ul>
                 <li><a href="">Home</a></li>
@@ -61,7 +61,6 @@
             <div class="cell">1 Year</div>
             <div class="cell">$9.00 USD</div>
             <div class="cell">Transfer Price No</div>
-            <div class="line"></div>
         </div>
     </section>
     <section class="packages">
@@ -79,7 +78,7 @@
                 <li>Free Support</li>
             </ul>
             <div class="bage">
-                <p>$<span>15</span>/mn</p>
+                <p><sup>$</sup><span>15</span>/Mo</p>
                 <div class="button">SELECT PLAN</div>
             </div>
         </div>
@@ -95,8 +94,8 @@
                 <li>Control Panel & FTP</li>
                 <li>Free Support</li>
             </ul>
-            <div>
-                <p>$<span>15</span>/mn</p>
+            <div class="bage">
+                <p><sup>$</sup><span>30</span>/Mo</p>
                 <div class="button">SELECT PLAN</div>
             </div>
         </div>
@@ -112,8 +111,8 @@
                 <li>Control Panel & FTP</li>
                 <li>Free Support</li>
             </ul>     
-            <div>
-                    <p>$<span>15</span>/mn</p>
+            <div class="bage">
+                    <p><sup>$</sup><span>40</span>/Mo</p>
                     <div class="button">SELECT PLAN</div>
             </div>
         </div>
@@ -129,15 +128,14 @@
                 <li>Control Panel & FTP</li>
                 <li>Free Support</li>
             </ul> 
-            <div>
-                    <p>$<span>15</span>/mn</p>
+            <div class="bage">
+                    <p><sup>$</sup><span>70</span>/Mo</p>
                     <div class="button">SELECT PLAN</div>
             </div>
         </div>
     </section>
     <section id="about">
-        <hr>
-        <div>
+        <div class="about">
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                Praesent feugiat eget diam sit amet molestie.Curabitur. 
@@ -145,51 +143,61 @@
                Mauris at augue libero. Fusce posuere, sapien nec poır.
                Uaee augsuada sed mauris in tincidunt...</p>
         </div>
-        <div>
+        <div class="line"></div>
+        <div class="team">
             <div>
-                <img src="" alt="">
-                <p>Jonny Doe</p>
+                <img src="./images/team-img3.jpg" alt="Jonny Doe-Designer">
+                <h4>Jonny Doe</h4>
                 <p>Designer</p>
-                <p></p>
+                <p><i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-link"></i>
+                </p>
             </div>
             <div>
-                <img src="" alt="">
-                <p>John Doe</p>
+                <img src="./images/team-img1.jpg" alt="John Doe-Designer">
+                <h4>John Doe</h4>
                 <p>Designer</p>
-                <p></p>  
+                <p><i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-link"></i>
+                </p>
             </div>
             <div>
-                <img src="" alt="">
-                <p>Johnathan Doe</p>
+                <img src="./images/team-img2.jpg" alt="Johnathan Doe-Designer">
+                <h4>Johnathan Doe</h4>
                 <p>Designer</p>
-                <p></p>
+                <p><i class="fab fa-facebook-f"></i>
+                   <i class="fab fa-twitter"></i>
+                   <i class="fas fa-link"></i>
+                </p>
             </div>
         </div>
     </section>
-    <section class="slider">
+    <section id="slider" class="slider">
 
     </section>
     <section id="functions">
         <div>
-            <p><i class="fas fa-bolt"></i></p>
+            <div class="function function1"></div>
             <h3>Fast Servers</h3>
             <p>Nulla dapibus neque augue, quis 
                tincidunt tortor aliquam vitae.</p>
         </div>
         <div>
-            <p><i class="fas fa-cloud"></i></p>
+            <div class="function function2"></div>
             <h3>Cloud Servers</h3>
             <p>Nulla dapibus neque augue, quis 
                tincidunt tortor aliquam vitae.</p>
         </div>
         <div>
-            <p><i class="fas fa-arrows-alt"></i></p>
+            <div class="function function3"></div>
             <h3>Domain Transfer</h3>
             <p>Nulla dapibus neque augue, quis 
                tincidunt tortor aliquam vitae.</p>
         </div>
         <div>
-            <p><i class="fas fa-comments"></i></p>
+            <div class="function function4"></div>
             <h3>Live Support</h3>
             <p>Nulla dapibus neque augue, quis 
                tincidunt tortor aliquam vitae.</p>
@@ -197,25 +205,27 @@
     </section>
     </main>
     <footer>
-            <img class="logo" src="images/logo.png" alt="Ghost Host">
+        <div class="wrapper"> 
+            <img class="logo" src="images/logoghost.png" alt="Ghost Host">
         <nav>
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">Domain</a></li>
-                <li><a href="">Hosting</a></li>
-                <li><a href="">Clients</a></li>
+                <li><a href="">About Us</a></li>
                 <li><a href="">Blog</a></li>
-                <li><a href="">Support</a></li>
+                <li><a href="">Policy</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
-        <div>
+       </div>
+       <div class="footer wrapper">
+        <div class="footer1">
             <p>Lorem ipsum dolor sit amet, consecteteeseurı
                adipiscing elit. Donec mollis commodoeesene
                que, non commodo risus volutpat vel.                    
             </p>
             <p>Design by Mert Can Eyriyer.</p>
         </div>
-        <div>
+        <div class="footer2">
         <ul>
             <li>Support</li>
             <li>Account</li>
@@ -229,12 +239,13 @@
             <li>Find Domain</li>
         </ul>
         </div>
-        <address>
+        <div class="footer3">
             <p>0000-0000-0000</p>
             <p>informationteam@ghosthost.com</p>
             <p>Lorem Ipsum Street, Lorem Avenue,</p>
             <p>Lorem Ipsum</p>
-        </address>
+        </div>
+        </div>
     </footer>
 
 </div> 
