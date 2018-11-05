@@ -451,10 +451,13 @@ footer {
     background-color: #2a2a2a;
     color: rgb(104,104,104);
     font-family: 'Lato light',Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 .footer {
     display: grid;
-    grid-template-columns: 4fr 5fr 3fr;
+    grid-template-columns: 4fr 1px 5fr 1px 3fr;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 footer .logo {
     float: left;
@@ -466,6 +469,8 @@ footer .logo {
 footer div.wrapper{
     min-height: 4.6rem;
     border-bottom: 1px solid rgb(104,104,104);
+    grid-gap: 4rem;
+    font-size: .9rem;
 }
 footer nav {
     text-transform: uppercase;
@@ -476,8 +481,35 @@ footer nav {
 footer nav a {
     color: rgb(104,104,104);
     text-decoration: none;
-    font-family: 'Lato',Arial, Helvetica, sans-serif;
 }
 footer nav li {
     margin-left: 2.2rem;
+}
+.footer2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;    
+}
+.footer2 ul {
+    line-height: 1.9rem;
+    padding-inline-start: 1.2rem;
+}
+.footer2 ul li {
+    list-style-type: none;
+}
+.footer2 ul li::before {
+    list-style-type: none;
+    font-family: "Font Awesome 5 Free";
+    content: '\f105';
+    margin-right: .5rem;
+    font-weight: 900;
+}
+.footer2 ul li:hover {
+    padding-left: 0.5rem;
+    color: white;
+}
+.footer .line {
+    border-left: 1px solid rgb(104,104,104);
+}
+footer .wrapper:last-child {
+    border-bottom: none;
 }
